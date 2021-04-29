@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:luckycase/criptoBuy.dart';
 import 'package:luckycase/loteriaPage.dart';
+import 'package:luckycase/melate.dart';
 
 class LuckyPage extends StatefulWidget {
   LuckyPage({Key key}) : super(key: key);
@@ -36,6 +38,42 @@ class _LuckyPageState extends State<LuckyPage> {
                       child: Image(
                           fit: BoxFit.cover,
                           image: AssetImage('lib/assets/mayor3800.jpeg')))),
+            ),
+          ),
+/*           Container(
+            child: GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Melate()),
+                );
+              },
+              child: Container(
+                  height: size.height * 0.2,
+                  margin: EdgeInsets.fromLTRB(25, 25, 25, 25),
+                  child: ClipRRect(
+                      borderRadius: BorderRadius.circular(8.0),
+                      child: Image(
+                          fit: BoxFit.cover,
+                          image: AssetImage('lib/assets/melate.png')))),
+            ),
+          ), */
+          Container(
+            child: GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => CriptoBuy()),
+                );
+              },
+              child: Container(
+                  height: size.height * 0.2,
+                  margin: EdgeInsets.fromLTRB(25, 25, 25, 25),
+                  child: ClipRRect(
+                      borderRadius: BorderRadius.circular(8.0),
+                      child: Image(
+                          fit: BoxFit.cover,
+                          image: AssetImage('lib/assets/criptomonedas.jpeg')))),
             ),
           ),
         ],

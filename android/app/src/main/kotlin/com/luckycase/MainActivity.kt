@@ -1,4 +1,4 @@
-package com.example.luckycase
+package com.luckycase
 
 import io.flutter.embedding.android.FlutterActivity
 

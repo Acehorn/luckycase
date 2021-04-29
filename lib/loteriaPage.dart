@@ -55,7 +55,7 @@ class _ListaNumerosState extends State<ListaNumeros> {
             SingleChildScrollView(
               child: listNum.isNotEmpty
                   ? Container(
-                      height: size.height * 0.5,
+                      height: size.height * 0.35,
                       child: ListView.builder(
                         shrinkWrap: true,
                         itemCount: listNum.length,
@@ -72,10 +72,10 @@ class _ListaNumerosState extends State<ListaNumeros> {
                       ),
                     )
                   : Container(
-                      height: size.height * 0.5,
+                      height: size.height * 0.35,
                       child: Center(
                         child: Container(
-                          padding: EdgeInsets.all(32),
+                          padding: EdgeInsets.only(left: 32, right: 32),
                           child: Text(
                               "Agrega ultimos numeros ganadores para predicción"),
                         ),
@@ -166,7 +166,7 @@ class _ListaNumerosState extends State<ListaNumeros> {
     List<int> contadores = [0, 0, 0, 0, 0, 0, 0, 0, 0];
     for (var i = 0; i < listNum.length; i++) {
       if (index == 0) {
-        numX = int.parse(listNum[i].substring(0));
+        numX = int.parse(listNum[i].substring(0, 1));
         nuevaLista.add(numX);
       }
       if (index == 1) {
@@ -260,7 +260,7 @@ class _ListaNumerosState extends State<ListaNumeros> {
               color: Colors.transparent,
               child: Center(
                 child: Container(
-                  height: size.height * 0.4,
+                  height: size.height * 0.5,
                   width: size.width * 0.9,
                   alignment: Alignment.center,
                   color: Colors.white,
@@ -313,7 +313,7 @@ class _ListaNumerosState extends State<ListaNumeros> {
                       FlatButton(
                           onPressed: () {
                             setState(() {});
-                            for (var i = 0; i < 13; i++) {
+                            for (var i = 0; i < 1000000; i++) {
                               var rng = new Random();
                               String nS = rng.nextInt(100000).toString();
                               if (nS.length == 5) {

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "500667916905",
+    "project_id": "luckycase-d07e0",
+    "storage_bucket": "luckycase-d07e0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:500667916905:android:fbc741f69db4d5f46b78f8",
+        "android_client_info": {
+          "package_name": "com.luckycase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "500667916905-la97is2spjhc9988ntrf6nre86v72a2r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5-_kPKFECqueYu59D9VcSlZq9sZ2RKOw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "500667916905-la97is2spjhc9988ntrf6nre86v72a2r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
