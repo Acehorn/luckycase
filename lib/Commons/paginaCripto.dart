@@ -28,14 +28,14 @@ class _CriptoPageVariableState extends State<CriptoPageVariable> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: widget.color,
+      color: Colors.black87,
       child: Column(
         children: [
           Container(
             margin: EdgeInsets.all(16),
             child: Text(
               "¡En este momento debes invertir en " + widget.monedaTitle + "!",
-              style: TextStyle(color: Colors.black),
+              style: TextStyle(color: widget.color),
             ),
           ),
           Container(
@@ -48,50 +48,14 @@ class _CriptoPageVariableState extends State<CriptoPageVariable> {
           Container(
             margin: EdgeInsets.only(top: 6, left: 64, right: 64, bottom: 6),
             alignment: Alignment.center,
-            child: Text("Cantidad sugerida"),
+            child: Text("Cantidad sugerida", style: TextStyle(color: widget.color),),
           ),
           Container(
             margin: EdgeInsets.only(top: 6, left: 64, right: 64, bottom: 6),
             alignment: Alignment.center,
             child: Text(currencyMXN.format(nS),
-                style: TextStyle(fontSize: 25, color: Colors.black)),
+                style: TextStyle(fontSize: 25, color: widget.color)),
           ),
-          /*    Container(
-            margin: EdgeInsets.only(top: 6, left: 64, right: 64, bottom: 6),
-            alignment: Alignment.center,
-            child: Text(currencyMXN.format(45345),
-                style: TextStyle(fontSize: 25, color: Colors.black)),
-          ),
-          Container(
-            margin: EdgeInsets.only(top: 6, left: 64, right: 64, bottom: 6),
-            alignment: Alignment.center,
-            child: Text("¿Cuanto invertiras?"),
-          ),
-          Container(
-            margin: EdgeInsets.only(top: 6, left: 64, right: 64, bottom: 6),
-            child: TextField(
-              keyboardType: TextInputType.number,
-              // controller: controllerNumero,
-              onChanged: (String value) {
-                setState(() {});
-                /*    errorText = "";
-                                inputNum = value; */
-              },
-            ),
-          ),
-          FlatButton(
-            child: Container(
-                width: 130,
-                height: 50,
-                color: Colors.black,
-                child: Center(
-                  child: Text(
-                    "Guardar",
-                    style: TextStyle(color: Colors.white),
-                  ),
-                )),
-            onPressed: () {},
-          ), */
         ],
       ),
     );

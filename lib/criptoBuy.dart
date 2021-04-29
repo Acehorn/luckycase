@@ -72,17 +72,7 @@ class _CriptoBuyState extends State<CriptoBuy> {
           "Criptomonedas",
           style: TextStyle(color: Colors.black),
         ),
-        actions: [
-          GestureDetector(
-            child: Icon(Icons.ac_unit),
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => CriptoBuy()),
-              );
-            },
-          )
-        ],
+  
       ),
       body: monedaSuerte == 0
           ? bitcoinPage()
